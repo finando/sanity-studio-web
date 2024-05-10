@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@finando/typescript-config/react",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "jsx": "preserve",
+    "paths": {
+      "@project/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "files": [
+    "sanity.cli.ts",
+    "sanity.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
